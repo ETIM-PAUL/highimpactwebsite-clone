@@ -95,29 +95,30 @@
               >Training Career Path (Job Roles)</span
             >
           </p>
+          <div class="py-2">
+            <p class="relative text-black pt-4 text-left leading-[1.5em]">
+              Several companies are currently looking to combat cyber risks,
+              improve their cyber security architecture, and culture. Also,
+              defined by its rapid development, this field is an area that is
+              full of opportunities.
+            </p>
+          </div>
 
           <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
-            <li class="py-2">Associate Scrum Master</li>
+            <li class="py-2">Cyber Security Risk Analyst</li>
 
-            <li class="py-2">Scrum Master</li>
-            <li class="py-2">Scrum Manager</li>
+            <li class="py-2">Cyber Security Analyst</li>
+            <li class="py-2">Cyber Security Consultant</li>
 
-            <li class="py-2">Agile Project Manager</li>
+            <li class="py-2">Cyber Security Officer</li>
 
-            <li class="py-2">Agile Product Owner</li>
+            <li class="py-2">Security and Information Risk Advisor</li>
 
-            <li class="py-2">Agile Delivery Lead</li>
+            <li class="py-2">Information Security Analyst</li>
 
-            <li class="py-2">Agile Consultant</li>
+            <li class="py-2">Information Security Manager</li>
 
-            <li class="py-2">Agile Coach</li>
-
-            <li class="py-2">Senior Agile Coach</li>
-
-            <li class="py-2">Management Consultant</li>
-
-            <li class="py-2">Project Manager</li>
-            <li class="py-2">Project Management Officer (PMO)</li>
+            <li class="py-2">Risk Analyst</li>
           </ul>
         </div>
         <div class="pt-1 mb-44">

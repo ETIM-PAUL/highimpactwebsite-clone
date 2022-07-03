@@ -11,65 +11,121 @@
       <div class="mt-24 relative">
         <div class="pt-10">
           <p class="relative text-black flex">
-            Do you want to upgrade your systems or processes, incorporate new
-            technology, or adapt processes to a new organisational structure?
-            Look no further. At High Impact Careers and Consulting, we work with
-            large and medium-sized enterprises across the private, and public
-            sectors and provide a variety of business transformation consulting
-            services. Our business transformation consulting work focuses on:
+            More than ever before, being a data-driven business is very
+            important. And regardless of the industry, the importance of data
+            analysis cannot be overemphasised.
           </p>
         </div>
         <div class="py-1">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black"
-              >Business Process Transformation:</span
+            Data analysis helps with key decision making, developing business
+            strategies, and deploying business solutions confidently. Moreover,
+            making business decisions based on data improves the confidence that
+            such decisions will lead to success.
+          </p>
+        </div>
+        <div class="py-1">
+          <p class="relative text-black pt-4 text-left leading-[1.5em]">
+            As a Data Analyst your role will involve collecting, organising, and
+            interpreting data to aid informed business decisions.
+          </p>
+        </div>
+        <div class="py-1">
+          <p class="relative text-black pt-4 text-left leading-[1.5em]">
+            On this course, you will learn, and become familiar with the skills
+            and tools needed to get into a role in Data Analysis and be able to
+            identify, analyse, and translate data into real business solutions
+            or solve critical business problems.
+          </p>
+        </div>
+
+        <div class="py-1">
+          <p class="relative text-black pt-4 text-left leading-[1.5em]">
+            <span class="text-black font-black text-2xl">Who is it for?</span>
+          </p>
+          <div class="py-1">
+            <p class="relative text-black pt-4 text-left leading-[1.5em]">
+              This Data Analysis course is designed for entry-level or mid-level
+              professionals who want to get into Data Analyst related roles and
+              use data to influence business solutions.
+            </p>
+          </div>
+        </div>
+        <div class="py-1">
+          <p class="relative text-black pt-4 text-left leading-[1.5em]">
+            <span class="text-black font-black text-2xl"
+              >What you will learn</span
             >
-            We define your processes as is, design the future state and
-            streamline operations and deliver tangible deliverables.
           </p>
+          <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
+            <li class="py-2">
+              What is Data Analysis and Why is Data Analysis Important?
+            </li>
+            <li class="py-2">Role and Competencies of a Data Analyst</li>
+            <li class="py-2">
+              Data Analysis Software and Tools (Excel, Power BI, SQL)
+            </li>
+            <li class="py-2">Data System Architectures and Platforms</li>
+            <li class="py-2">
+              Descriptive, Diagnostic, Predictive and Prescriptive Analytics
+            </li>
+            <li class="py-2">Frameworks and Techniques of Data Analytics</li>
+            <li class="py-2">Reporting, Insights, and Prediction</li>
+          </ul>
+          <p class="py-1 text-black text-[16px] font-black">
+            High Impact Methodology
+          </p>
+          <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
+            <li class="py-2">Introductory Training (Week 1-2)</li>
+            <li class="py-2">Mentoring and Coaching (Week 3-10)</li>
+            <li class="py-2">
+              Practical Live and Workplace Skills (Week 3-10)
+            </li>
+            <li class="py-2">
+              Work Experience via Live Projects and Data Set (Week 3-10)
+            </li>
+            <li class="py-2">CV Review and LinkedIn Optimisation</li>
+            <li class="py-2">Job Search and Interview Preparation</li>
+            <li class="py-2">On the Job Support (1 month)</li>
+          </ul>
         </div>
         <div class="py-1">
+          <p class="relative text-black py-2 text-left leading-[1.5em]">
+            The data set you will be working on will provide you with the
+            necessary skills, knowledge, experience, confidence, and something
+            to talk about in your interviews. This will improve your chances of
+            transitioning into a fantastic role.
+          </p>
+        </div>
+
+        <div class="py-1">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black"
-              >Organisational Transformation:</span
+            <span class="text-black font-black text-2xl"
+              >Training Career Path (Job Roles)</span
             >
-            We help with digitalisation, agile development, automation,
-            real-time collaboration, BI, knowledge retention, data visualisation
-            and process value mapping.
           </p>
-        </div>
-        <div class="py-1">
-          <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black">Digital Transformation:</span>
-            We can help you map out new processes and bring digital
-            transformation to processes that are archaic and need upgrading.
-          </p>
-        </div>
-        <div class="py-1">
-          <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black">System Migration:</span>
-            Development of migration strategy documentation and approach, target
-            state data, application architecture designs, solution and
-            enterprise architecture and cloud technologies implementation.
-          </p>
-        </div>
-        <div class="py-1">
-          <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black">Management Consulting:</span>
-            Our areas of competence include cultural change, product
-            development, transformation strategy, services, processes,
-            enterprise architectures, business cases, policies, op models,
-            strategic drivers, resourcing and capabilities.
-          </p>
+          <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
+            <li class="py-2">Data Entry Administrator</li>
+            <li class="py-2">Systems Analyst</li>
+            <li class="py-2">Data Business Analyst</li>
+            <li class="py-2">Quantitative Analyst</li>
+            <li class="py-2">Management Analyst</li>
+            <li class="py-2">Marketing Analyst</li>
+            <li class="py-2">Sales Analyst</li>
+            <li class="py-2">Data Scientist</li>
+            <li class="py-2">Information Security Analyst</li>
+            <li class="py-2">Solutions Architect</li>
+            <li class="py-2">Intelligence Analyst</li>
+            <li class="py-2">Market Research Data Analyst</li>
+            <li class="py-2">Social Media Data Analyst</li>
+            <li class="py-2">Data Engineer</li>
+            <li class="py-2">Operations Analyst</li>
+          </ul>
         </div>
         <div class="pt-1 mb-44">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black"
-              >Start your business transformation with High Impact Careers and
-              Consulting. Call 07703500097 or send an email to</span
-            >
-            <br /><span class="text-red-900 font-bold"
-              >info@highimpactcareers.co.uk.
+            <span class="text-black font-black">
+              Course Price: £550/$750 (VAT Inclusive)
             </span>
           </p>
         </div>
