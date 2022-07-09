@@ -1,9 +1,16 @@
 <template>
   <div class="overlay-color">
     <img
-      src="../assets/image2.jpg"
+      src="@/assets/image2.jpg"
       class="object-cover h-[440px] min-h-[400px] w-screen opacity-25"
     />
+    <div
+      class="absolute lg:left-44 md:left-16 md:top-50 top-52 left-6 sm:left-24 w-[200] my-auto flex container max-w-xll"
+    >
+      <p class="sm:text-[55px] text-[30px] font-black text-[#fff] absolute">
+        Agile Fundamentals
+      </p>
+    </div>
   </div>
 
   <div class="bg-white-700">

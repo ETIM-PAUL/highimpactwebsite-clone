@@ -14,6 +14,9 @@ import ProjMan from "@/views/Courses/ProjMan.vue";
 import ProMan from "@/views/Courses/ProMan.vue";
 import SoftEng from "@/views/Courses/SoftEng.vue";
 import UserXpr from "@/views/Courses/UserXpr.vue";
+import ContactUs from "@/views/ContactUs.vue";
+import BootCamp from "@/views/BootCamp.vue";
+import ServicePayment from "@/views/ServicePayment.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -94,9 +97,24 @@ const router = createRouter({
       component: SoftEng,
     },
     {
-      path: "/user-experience/",
+      path: "/user-experience",
       name: "user-experience",
       component: UserXpr,
+    },
+    {
+      path: "/contact-us",
+      name: "contact-us",
+      component: ContactUs,
+    },
+    {
+      path: "/bootcamp",
+      name: "cbootcamp",
+      component: BootCamp,
+    },
+    {
+      path: "/product/high-impact-careers-bootcamp-part-payment",
+      name: "product/high-impact-careers-bootcamp-part-payment",
+      component: ServicePayment,
     },
   ],
 });

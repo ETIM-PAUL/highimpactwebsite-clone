@@ -1,9 +1,12 @@
 <template>
   <div class="overlay-color">
-    <img
-      src="../assets/image2.jpg"
-      class="object-cover h-[440px] min-h-[400px] w-screen opacity-25"
-    />
+    <div
+      class="absolute lg:left-44 md:left-16 md:top-50 top-52 left-6 sm:left-24 w-[200] my-auto flex container max-w-xll"
+    >
+      <p class="sm:text-[55px] text-[30px] font-black text-[#fff] absolute">
+        Product Management
+      </p>
+    </div>
   </div>
 
   <div class="bg-white-700">
@@ -11,70 +14,145 @@
       <div class="mt-24 relative">
         <div class="pt-10">
           <p class="relative text-black flex">
-            Do you want to upgrade your systems or processes, incorporate new
-            technology, or adapt processes to a new organisational structure?
-            Look no further. At High Impact Careers and Consulting, we work with
-            large and medium-sized enterprises across the private, and public
-            sectors and provide a variety of business transformation consulting
-            services. Our business transformation consulting work focuses on:
+            Product management involves strategically driving the design,
+            development, prototyping, launch, and continual support of a
+            company’s products. Product Managers discover, develop, manage, and
+            market products for businesses.
           </p>
         </div>
         <div class="py-1">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black"
-              >Business Process Transformation:</span
+            This Product Management course is designed for entry-level or
+            mid-level professionals looking to get into a career as a Product
+            Manager and other related roles.
+          </p>
+        </div>
+        <div class="py-1">
+          <p class="relative text-black pt-4 text-left leading-[1.5em]">
+            As a Product Manager, Product Owner or Product Analyst, you will be
+            responsible for working within the agile team to break new features
+            down into user stories, and development tasks so as to populate the
+            product backlog. Also, you will be overseeing the entire product
+            lifecycle (customer demand, tech requirement, market competition,
+            pricing, product description, sales channels, marketing, etc) and
+            ensuring that the product runs smoothly. You will be working with
+            external and internal stakeholders including Developers, Project
+            Managers, Business Analysts, Software Testers, etc.
+          </p>
+        </div>
+
+        <div class="py-1">
+          <p class="relative text-black pt-4 text-left leading-[1.5em]">
+            <span class="text-black font-black text-2xl"
+              >What you will learn</span
             >
-            We define your processes as is, design the future state and
-            streamline operations and deliver tangible deliverables.
           </p>
-        </div>
-        <div class="py-1">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black"
-              >Organisational Transformation:</span
+            <span class="text-black font-black text-xl uppercase"
+              >module one</span
             >
-            We help with digitalisation, agile development, automation,
-            real-time collaboration, BI, knowledge retention, data visualisation
-            and process value mapping.
           </p>
+          <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
+            <li class="py-2">Understanding Product Strategy and Vision</li>
+
+            <li class="py-2">Product Vision and Strategy</li>
+
+            <li class="py-2">Understanding Customer/Market Needs</li>
+
+            <li class="py-2">
+              Product Research, Market Analysis and Documentation
+            </li>
+
+            <li class="py-2">Product Requirements</li>
+
+            <li class="py-2">Product Development Methodologies</li>
+
+            <li class="py-2">Product Roadmap</li>
+
+            <li class="py-2">Product Development and Dependencies</li>
+
+            <li class="py-2">Product Development Planning</li>
+
+            <li class="py-2">Dependencies Provisioning</li>
+
+            <li class="py-2">Product Design and Validation</li>
+          </ul>
+          <p class="relative text-black pt-4 text-left leading-[1.5em]">
+            <span class="text-black font-black text-xl uppercase"
+              >module two</span
+            >
+          </p>
+          <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
+            <li class="py-2">Product Implementation</li>
+
+            <li class="py-2">Quality Assurance Testing</li>
+
+            <li class="py-2">Product Launching</li>
+
+            <li class="py-2">Product Performance Monitoring</li>
+
+            <li class="py-2">Product Maintenance and Support</li>
+
+            <li class="py-2">Product Pricing and Marketing</li>
+
+            <li class="py-2">Product Growth Hacking</li>
+          </ul>
+          <p class="py-1 text-black text-2xl font-black">
+            High Impact Methodology
+          </p>
+          <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
+            <li class="py-2">Introductory Training (Week 1-2)</li>
+            <li class="py-2">Mentoring and Coaching (Week 3-10)</li>
+            <li class="py-2">
+              Practical Live and Workplace Skills (Week 3-10)
+            </li>
+            <li class="py-2">
+              Work Experience via Live Projects and Data Set (Week 3-10)
+            </li>
+            <li class="py-2">CV Review and LinkedIn Optimisation</li>
+            <li class="py-2">Job Search and Interview Preparation</li>
+            <li class="py-2">On the Job Support (1 month)</li>
+          </ul>
         </div>
+
         <div class="py-1">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black">Digital Transformation:</span>
-            We can help you map out new processes and bring digital
-            transformation to processes that are archaic and need upgrading.
+            <span class="text-black font-black text-2xl"
+              >Training Career Path (Job Roles)</span
+            >
           </p>
-        </div>
-        <div class="py-1">
-          <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black">System Migration:</span>
-            Development of migration strategy documentation and approach, target
-            state data, application architecture designs, solution and
-            enterprise architecture and cloud technologies implementation.
-          </p>
-        </div>
-        <div class="py-1">
-          <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black">Management Consulting:</span>
-            Our areas of competence include cultural change, product
-            development, transformation strategy, services, processes,
-            enterprise architectures, business cases, policies, op models,
-            strategic drivers, resourcing and capabilities.
-          </p>
+          <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
+            <li class="py-2">Assistant Product Manager</li>
+
+            <li class="py-2">Product Owner</li>
+
+            <li class="py-2">Product Analyst</li>
+
+            <li class="py-2">Product Manager</li>
+
+            <li class="py-2">Digital Product Consultant</li>
+
+            <li class="py-2">Technical Product Analyst</li>
+
+            <li class="py-2">Analyst, Product Research</li>
+
+            <li class="py-2">Software Product Analyst</li>
+            <li class="py-2">Product Designer</li>
+
+            <li class="py-2">Product Marketing Manager</li>
+
+            <li class="py-2">Digital Product Manager</li>
+          </ul>
         </div>
         <div class="pt-1 mb-44">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black"
-              >Start your business transformation with High Impact Careers and
-              Consulting. Call 07703500097 or send an email to</span
-            >
-            <br /><span class="text-red-900 font-bold"
-              >info@highimpactcareers.co.uk.
+            <span class="text-black font-black">
+              Course Price: £550/$750 (VAT Inclusive)
             </span>
           </p>
         </div>
       </div>
+      <div></div>
     </div>
   </div>
-  <div></div>
 </template>

@@ -2,8 +2,15 @@
   <div class="overlay-color">
     <img
       src="@/assets/handshake.png"
-      class="object-cover h-[440px] w-screen opacity-25"
+      class="object-cover h-[440px] min-h-[400px] w-screen opacity-25"
     />
+    <div
+      class="absolute lg:left-44 md:left-16 md:top-50 top-52 left-6 sm:left-24 w-[200] my-auto flex container max-w-xll"
+    >
+      <p class="sm:text-[55px] text-[30px] font-black text-[#fff] absolute">
+        Recruitment for Employers
+      </p>
+    </div>
   </div>
 
   <div class="bg-white-700">
@@ -92,7 +99,8 @@
             evaluation will help you reach and secure the right talent, quickly
             and effectively to meet the needs of your business. Turnaround time
             is a maximum of 10 working days. If you have opportunities, contact
-            us via <span class="font-black">info@highimpactcareers.co.uk.</span>
+            us via
+            <span class="font-black">info@highimpactcareers.co.uk.</span>
           </p>
           <p class="relative text-black font-black pt-5">
             Recruitment Advertising
@@ -127,5 +135,4 @@
       </div>
     </div>
   </div>
-  <div></div>
 </template>

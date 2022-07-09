@@ -1,9 +1,12 @@
 <template>
   <div class="overlay-color">
-    <img
-      src="../assets/image2.jpg"
-      class="object-cover h-[440px] min-h-[400px] w-screen opacity-25"
-    />
+    <div
+      class="absolute lg:left-44 md:left-16 md:top-50 top-52 left-6 sm:left-24 w-[200] my-auto flex container max-w-xll"
+    >
+      <p class="sm:text-[55px] text-[30px] font-black text-[#fff] absolute">
+        Software Engineering
+      </p>
+    </div>
   </div>
 
   <div class="bg-white-700">
@@ -11,65 +14,85 @@
       <div class="mt-24 relative">
         <div class="pt-10">
           <p class="relative text-black flex">
-            Do you want to upgrade your systems or processes, incorporate new
-            technology, or adapt processes to a new organisational structure?
-            Look no further. At High Impact Careers and Consulting, we work with
-            large and medium-sized enterprises across the private, and public
-            sectors and provide a variety of business transformation consulting
-            services. Our business transformation consulting work focuses on:
+            The Institute of Electrical and Electronics Engineers (IEEE) defines
+            software engineering as the application of a systematic,
+            disciplined, quantifiable approach to the development, operation,
+            and maintenance of software. In other words, the application of
+            engineering concepts to software development.
           </p>
         </div>
         <div class="py-1">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black"
-              >Business Process Transformation:</span
+            As a Software Engineer, you will work in a constantly evolving
+            environment while solving problems and dealing with the development
+            and operation of reliable, efficient, and effective software
+            products such as productivity tools, mobile platform applications
+            and web browsers. You will earn an impressive salary and have very
+            good job prospects in diverse industries.
+          </p>
+        </div>
+
+        <div class="py-1">
+          <p class="relative text-black pt-4 text-left leading-[1.5em]">
+            <span class="text-black font-black text-2xl"
+              >What you will learn</span
             >
-            We define your processes as is, design the future state and
-            streamline operations and deliver tangible deliverables.
           </p>
+          <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
+            <li class="py-2">Analyse User Requirements</li>
+            <li class="py-2">Software Development, Audit and Maintenance</li>
+            <li class="py-2">Updating Programs/Systems Improvement</li>
+            <li class="py-2">Computer programs and applications</li>
+            <li class="py-2">Analysis and Design</li>
+            <li class="py-2">AI Fundamentals</li>
+            <li class="py-2">Mobile Platform Applications</li>
+          </ul>
+          <p class="py-1 text-black text-2xl font-black">
+            High Impact Methodology
+          </p>
+          <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
+            <li class="py-2">Introductory Training (Week 1-2)</li>
+            <li class="py-2">Mentoring and Coaching (Week 3-10)</li>
+            <li class="py-2">
+              Practical Live and Workplace Skills (Week 3-10)
+            </li>
+            <li class="py-2">
+              Work Experience via Live Projects and Data Set (Week 3-10)
+            </li>
+            <li class="py-2">CV Review and LinkedIn Optimisation</li>
+            <li class="py-2">Job Search and Interview Preparation</li>
+            <li class="py-2">On the Job Support (1 month)</li>
+          </ul>
         </div>
         <div class="py-1">
+          <p
+            class="relative text-black py-2 text-left text-[16px] leading-[1.5em]"
+          >
+            The data set you will be working on will provide you with the
+            necessary skills, knowledge, experience, confidence, and something
+            to talk about in your interviews. This will improve your chances of
+            transitioning into a fantastic role.
+          </p>
+        </div>
+
+        <div class="py-1">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black"
-              >Organisational Transformation:</span
+            <span class="text-black font-black text-2xl"
+              >Training Career Path (Job Roles)</span
             >
-            We help with digitalisation, agile development, automation,
-            real-time collaboration, BI, knowledge retention, data visualisation
-            and process value mapping.
           </p>
-        </div>
-        <div class="py-1">
-          <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black">Digital Transformation:</span>
-            We can help you map out new processes and bring digital
-            transformation to processes that are archaic and need upgrading.
-          </p>
-        </div>
-        <div class="py-1">
-          <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black">System Migration:</span>
-            Development of migration strategy documentation and approach, target
-            state data, application architecture designs, solution and
-            enterprise architecture and cloud technologies implementation.
-          </p>
-        </div>
-        <div class="py-1">
-          <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black">Management Consulting:</span>
-            Our areas of competence include cultural change, product
-            development, transformation strategy, services, processes,
-            enterprise architectures, business cases, policies, op models,
-            strategic drivers, resourcing and capabilities.
-          </p>
+          <ul class="text-black gap-16 inline-block list-disc p-4 text-[16px]">
+            <li class="py-2">Software Engineer</li>
+            <li class="py-2">Software Developer</li>
+            <li class="py-2">Software Architect</li>
+            <li class="py-2">Systems Analyst</li>
+            <li class="py-2">Mobile App Developer</li>
+          </ul>
         </div>
         <div class="pt-1 mb-44">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
-            <span class="text-black font-black"
-              >Start your business transformation with High Impact Careers and
-              Consulting. Call 07703500097 or send an email to</span
-            >
-            <br /><span class="text-red-900 font-bold"
-              >info@highimpactcareers.co.uk.
+            <span class="text-black font-black">
+              Course Price: £550/$750 (VAT Inclusive)
             </span>
           </p>
         </div>

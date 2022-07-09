@@ -1,8 +1,8 @@
 <script setup>
 import { RouterView } from "vue-router";
-// import HelloWorld from '@/components/HelloWorld.vue'
-import HeaderNav from "./components/HeaderNav.vue";
+import HeaderNav from "./components/Header/HeaderNav.vue";
 import FooterSection from "./components/FooterSection.vue";
+import "@/assets/browser.css";
 </script>
 
 <template>

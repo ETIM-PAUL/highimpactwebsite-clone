@@ -1,9 +1,12 @@
 <template>
   <div class="overlay-color">
-    <img
-      src="../assets/image2.jpg"
-      class="object-cover h-[440px] min-h-[400px] w-screen opacity-25"
-    />
+    <div
+      class="absolute lg:left-44 md:left-16 md:top-50 top-52 left-6 sm:left-24 w-[200] my-auto flex container max-w-xll"
+    >
+      <p class="sm:text-[55px] text-[30px] font-black text-[#fff] absolute">
+        Data Analysis
+      </p>
+    </div>
   </div>
 
   <div class="bg-white-700">
@@ -90,7 +93,9 @@
           </ul>
         </div>
         <div class="py-1">
-          <p class="relative text-black py-2 text-left leading-[1.5em]">
+          <p
+            class="relative text-black text-[16px] py-2 text-left leading-[1.5em]"
+          >
             The data set you will be working on will provide you with the
             necessary skills, knowledge, experience, confidence, and something
             to talk about in your interviews. This will improve your chances of
