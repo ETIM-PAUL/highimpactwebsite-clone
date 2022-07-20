@@ -16,7 +16,11 @@ import SoftEng from "@/views/Courses/SoftEng.vue";
 import UserXpr from "@/views/Courses/UserXpr.vue";
 import ContactUs from "@/views/ContactUs.vue";
 import BootCamp from "@/views/BootCamp.vue";
+import BasketCart from "@/views/BasketCart.vue";
 import ServicePayment from "@/views/ServicePayment.vue";
+import ShopView from "@/views/ShopView.vue";
+import ResourcesView from "@/views/ResourcesView.vue";
+import CheckOut from "@/views/CheckOut.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -112,9 +116,29 @@ const router = createRouter({
       component: BootCamp,
     },
     {
-      path: "/product/high-impact-careers-bootcamp-part-payment",
-      name: "product/high-impact-careers-bootcamp-part-payment",
+      path: "/products/:slug",
+      name: "/products/:slug",
       component: ServicePayment,
+    },
+    {
+      path: "/basket",
+      name: "basket",
+      component: BasketCart,
+    },
+    {
+      path: "/shop",
+      name: "shop",
+      component: ShopView,
+    },
+    {
+      path: "/resources",
+      name: "resources",
+      component: ResourcesView,
+    },
+    {
+      path: "/checkout",
+      name: "checkout",
+      component: CheckOut,
     },
   ],
 });

@@ -69,6 +69,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.overlay {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+}
+
+#btnControl {
+  display: none;
+}
+
+.showOverlay:click .showOverlay {
+  display: block
+}
+
 .marque {
   /* Starting position */
   -moz-transform: translateX(50%);
@@ -147,7 +167,7 @@ body {
 .toggle-menu {
   display: flex;
   animation: slide-in-bottom;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 
 .slide-in-bottom {
@@ -283,7 +303,37 @@ body {
   display: inline-block;
 }
 
-.hrr::after {
-  /* content: "-";
-  width: "40px" */
+.cartQty {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  border-radius: 50px;
+  text-align: center;
+  color: #f6f1f1;
+  background-color: #000;
+  left: 70%;
+  position: absolute;
+  bottom: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-active {
+  color: black !important;
+  background-color: rgb(224 242 254);
+}
+
+@media only screen and (max-width: 1024px) {
+  .active {
+    color: black !important;
+    background-color: rgb(224 242 254);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .active {
+    color: rgb(125 211 252) !important;
+
+  }
 }

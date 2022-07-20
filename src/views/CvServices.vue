@@ -1,10 +1,18 @@
 <script setup>
 import PackageItem from "../components/CvServices/PackageItem.vue";
 </script>
+
+<script>
+export default {
+  components() {
+    PackageItem;
+  },
+};
+</script>
 <template>
   <div class="overlay-color">
     <div
-      class="absolute lg:left-44 md:left-16 md:top-50 top-48 px-4 sm:left-8 m-auto flex container"
+      class="absolute lg:left-[16%] md:left-[2.5%] sm:left-[5.5%] md:top-50 top-48 px-4 m-auto flex container"
     >
       <p class="sm:text-[55px] text-[30px] font-black text-[#fff] absolute">
         CV/Resume Services
@@ -158,7 +166,7 @@ import PackageItem from "../components/CvServices/PackageItem.vue";
         <p class="text-5xl font-black lg:py-0 py-6">Pricing Plans</p>
       </div>
       <div class="block lg:flex lg:w-[90%] m-auto">
-        <PackageItem>
+        <PackageItem href="/products/entry-level">
           <template #level>Entry Level</template>
           <template #years>0-5 Years Experience</template>
           <template #price>40</template>
@@ -167,16 +175,16 @@ import PackageItem from "../components/CvServices/PackageItem.vue";
           <template #sub-price3>£40</template>
           <template #full-price>£100</template>
         </PackageItem>
-        <PackageItem>
+        <PackageItem href="/products/bespoke-mid-executive">
           <template #level>BeSpoke Mid-Executive</template>
           <template #years>6-10 Years Experience</template>
-          <template #price>40</template>
+          <template #price>50</template>
           <template #sub-price1>£50</template>
           <template #sub-price2>£50</template>
           <template #sub-price3>£50</template>
           <template #full-price>£125</template>
         </PackageItem>
-        <PackageItem>
+        <PackageItem href="/products/bespoke-senior-executive">
           <template #level>Bespoke Senior Executive</template>
           <template #years>over 10 years experience</template>
           <template #price>60</template>

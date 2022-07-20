@@ -1,10 +1,3 @@
-<script>
-export default {
-  name: "FirstBoot",
-  show: "jj",
-};
-</script>
-
 <template>
   <div class="bg-[#f7f7f7] lg:my-2 lg:mx-2">
     <div class="p-4 flex justify-center align-center bg-[#2A2A5E] lg:shrink-0">
@@ -23,14 +16,14 @@ export default {
         ✔ Training to Increase Your Value/Make You More More Marketable
       </span>
     </div>
-    <div class="hr bg-[#000]"></div>
+    <div class="hr bg-[#e1e1e1]"></div>
 
     <div class="p-4 flex justify-center align-center">
       <span class="text-[14px] text-center">
         ✔ Mentoring to Harness Your Fundamental Understanding of Python
       </span>
     </div>
-    <div class="hr bg-[#000]"></div>
+    <div class="hr bg-[#e1e1e1]"></div>
 
     <div class="p-4 flex justify-center align-center">
       <span class="text-[14px] text-center">
@@ -39,11 +32,20 @@ export default {
     </div>
 
     <div class="p-4 flex justify-center align-center m-12 pb-10">
-      <button
-        class="w-[150px] rounded-lg border-[#2A2A5E] bg-[#2A2A5E] text-[#fff] p-4"
-      >
-        Get Started
-      </button>
+      <RouterLink v-bind:to="href"
+        ><button
+          class="w-[150px] rounded-lg border-[#2A2A5E] bg-[#2A2A5E] text-[#fff] p-4"
+        >
+          Get Started
+        </button>
+      </RouterLink>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "FirstBoot",
+  props: ["href"],
+};
+</script>

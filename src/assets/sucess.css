@@ -1,0 +1,64 @@
+.correct-symbol {}
+
+.checkmark {
+  display: inline-block;
+  height: 22px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.checkmark_circle {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border-radius: 100px;
+  justify-content: center;
+  /* top: 40px; */
+  /* left: 40px; */
+}
+
+.checkmark_stem {
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  background-color: #fff;
+  left: 10rem;
+  top: 3rem;
+}
+
+.checkmark_kick {
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 5px;
+  height: 55px;
+  background-color: #fff;
+  left: 7.9rem;
+  top: 9rem;
+}
+
+.add-another-book {
+  width: 350px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #3d3b3b;
+  margin-top: 2rem;
+  background-color: #3d3b3b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-another-book:hover {
+  border: 1px solid #2A2A5E;
+  background-color: #2A2A5E;
+  color: white;
+  cursor: pointer;
+}

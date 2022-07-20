@@ -13,4 +13,5 @@ import "@/assets/browser.css";
 
 <style>
 @import "@/assets/base.css";
+@import "@/assets/sucess.css";
 </style>

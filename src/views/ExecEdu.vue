@@ -5,7 +5,7 @@
       class="object-cover h-[440px] min-h-[400px] w-screen opacity-25"
     />
     <div
-      class="absolute lg:left-44 md:left-16 md:top-50 top-52 left-6 sm:left-24 w-[200] my-auto flex container max-w-xll"
+      class="absolute lg:left-[16.5%] md:left-[3%] md:top-50 top-52 left-[6%] sm:left-[5%] w-[200] my-auto flex container max-w-xll"
     >
       <p class="sm:text-[55px] text-[30px] font-black text-[#fff] absolute">
         Executive Education
@@ -15,8 +15,8 @@
 
   <div class="bg-white-700">
     <div class="w-[95%] md:w-[100%] lg:w-[72%] sm:w-[95%] m-auto">
-      <div class="my-12 lg:my-24 md:my-20 relative">
-        <div class="py-10 px-12">
+      <div class="mb-12 mt-0 lg:my-24 md:my-20 relative">
+        <div class="py-10 px-6 md:px-12">
           <p class="relative text-black flex">
             We provide individuals, teams, and organisations in the Tech
             Industry with professional bespoke training and consultancy services

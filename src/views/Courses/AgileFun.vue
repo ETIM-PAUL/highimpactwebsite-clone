@@ -5,7 +5,7 @@
       class="object-cover h-[440px] min-h-[400px] w-screen opacity-25"
     />
     <div
-      class="absolute lg:left-44 md:left-16 md:top-50 top-52 left-6 sm:left-24 w-[200] my-auto flex container max-w-xll"
+      class="absolute lg:left-[18.5%] md:left-[10%] md:top-50 top-52 left-6 sm:left-[4.5%] w-[200] my-auto flex container max-w-xll"
     >
       <p class="sm:text-[55px] text-[30px] font-black text-[#fff] absolute">
         Agile Fundamentals
@@ -15,7 +15,7 @@
 
   <div class="bg-white-700">
     <div class="w-[95%] md:w-[80%] lg:w-[63%] sm:w-[90%] m-auto">
-      <div class="mt-24 relative">
+      <div class="mt-0 md:mt-24 relative">
         <div class="pt-10">
           <p class="relative text-black flex">
             The Agile Fundamentals course is for anyone who wants to take their

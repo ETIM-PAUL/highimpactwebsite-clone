@@ -3,6 +3,7 @@ import IconFacebook from "../components/icons/IconFacebook.vue";
 import IconTwitter from "../components/icons/IconTwitter.vue";
 import IconLinkein from "../components/icons/IconLinkein.vue";
 import IconYoutube from "../components/icons/IconYoutube.vue";
+import { link } from "../main";
 </script>
 
 <template>
@@ -15,14 +16,26 @@ import IconYoutube from "../components/icons/IconYoutube.vue";
           <div>
             <h1 class="uppercase text-white font-bold">company</h1>
             <ul class="pt-8 text-white block">
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="/about-us">About Us</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('about')"
+                v-bind:class="link.link === 'about' ? 'active' : null"
+              >
+                <RouterLink to="/about-us">About Us</RouterLink>
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                Resources
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('resources')"
+                v-bind:class="link.link === 'resources' ? 'active' : null"
+              >
+                <RouterLink to="/resources">Resources</RouterLink>
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="contact-us">Contact Us</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('contact')"
+                v-bind:class="link.link === 'contact' ? 'active' : null"
+              >
+                <RouterLink to="/contact-us">Contact Us</RouterLink>
               </li>
               <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
                 Terms of Use
@@ -37,18 +50,38 @@ import IconYoutube from "../components/icons/IconYoutube.vue";
           <div>
             <h1 class="uppercase text-white font-bold">our services</h1>
             <ul class="pt-8 text-white">
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="business-transformation"> Business Transformation </a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('bizTrans')"
+                v-bind:class="link.link === 'bizTrans' ? 'active' : null"
+              >
+                <RouterLink to="/business-transformation">
+                  Business Transformation
+                </RouterLink>
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="executive-education">Executive Education</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('exeEdu')"
+                v-bind:class="link.link === 'exeEdu' ? 'active' : null"
+              >
+                <RouterLink to="/executive-education"
+                  >Executive Education</RouterLink
+                >
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="cv-services">Personal Branding</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('branding')"
+                v-bind:class="link.link === 'branding' ? 'active' : null"
+              >
+                <RouterLink to="/cv-services">Personal Branding</RouterLink>
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="recruitment-for-employers"
-                  >Recruitment for Employers</a
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('recruit')"
+                v-bind:class="link.link === 'recruit' ? 'active' : null"
+              >
+                <RouterLink to="/recruitment-for-employers"
+                  >Recruitment for Employers</RouterLink
                 >
               </li>
             </ul>
@@ -60,32 +93,82 @@ import IconYoutube from "../components/icons/IconYoutube.vue";
           <div>
             <h1 class="uppercase text-white font-bold">courses</h1>
             <ul class="pt-8 text-white">
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="agile-fundamentals">Agile Fundamentals</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('agile')"
+                v-bind:class="link.link === 'agile' ? 'active' : null"
+              >
+                <RouterLink to="/agile-fundamentals"
+                  >Agile Fundamentals</RouterLink
+                >
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="business-analysis">Business Analysis</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('bizAna')"
+                v-bind:class="link.link === 'bizAna' ? 'active' : null"
+              >
+                <RouterLink to="/business-analysis"
+                  >Business Analysis</RouterLink
+                >
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="technology-and-cyber-security">Cyber Security</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('cyber')"
+                v-bind:class="link.link === 'cyber' ? 'active' : null"
+              >
+                <RouterLink to="/technology-and-cyber-security"
+                  >Cyber Security</RouterLink
+                >
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="data-analysis">Data Analysis</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('dataAna')"
+                v-bind:class="link.link === 'dataAna' ? 'active' : null"
+              >
+                <RouterLink to="/data-analysis">Data Analysis</RouterLink>
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="digital-marketing">Digital Marketing</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('digital')"
+                v-bind:class="link.link === 'digital' ? 'active' : null"
+              >
+                <RouterLink to="/digital-marketing"
+                  >Digital Marketing</RouterLink
+                >
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="product-management">Product Management</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('prodMan')"
+                v-bind:class="link.link === 'prodMan' ? 'active' : null"
+              >
+                <RouterLink to="/product-management"
+                  >Product Management</RouterLink
+                >
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="project-management">Project Management</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('proMan')"
+                v-bind:class="link.link === 'proMan' ? 'active' : null"
+              >
+                <RouterLink to="/project-management"
+                  >Project Management</RouterLink
+                >
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="software-engineering">Software Engineering</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('soft')"
+                v-bind:class="link.link === 'soft' ? 'active' : null"
+              >
+                <RouterLink to="/software-engineering"
+                  >Software Engineering</RouterLink
+                >
               </li>
-              <li class="mb-3 hover:text-[#ff6900] cursor-pointer">
-                <a href="user-experience">User Experience</a>
+              <li
+                class="mb-3 hover:text-[#ff6900] cursor-pointer"
+                @click="link.setLink('user')"
+                v-bind:class="link.link === 'user' ? 'active' : null"
+              >
+                <RouterLink to="/user-experience">User Experience</RouterLink>
               </li>
             </ul>
           </div>
@@ -138,8 +221,9 @@ import IconYoutube from "../components/icons/IconYoutube.vue";
               fill="#41b883"
             ></path>
           </svg>
-          &nbsp; & &nbsp;
+          &nbsp; , &nbsp;
           <img src="../assets/tailwind-css.svg" class="h-5 mt-2" />
+          &nbsp; & &nbsp; Pinia
         </h1>
       </div>
     </div>

@@ -35,11 +35,20 @@
       ></span>
     </div>
     <div class="pt-2 flex justify-center align-center m-12 lg:pb-0 pb-10">
-      <button
-        class="w-[150px] rounded-lg border-[#2A2A5E] bg-[#2A2A5E] text-[#fff] p-4"
-      >
-        Get Started
-      </button>
+      <RouterLink v-bind:to="href">
+        <button
+          class="w-[150px] rounded-lg border-[#2A2A5E] bg-[#2A2A5E] text-[#fff] p-4"
+        >
+          Get Started
+        </button>
+      </RouterLink>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "PackageItem",
+  props: ["href"],
+};
+</script>

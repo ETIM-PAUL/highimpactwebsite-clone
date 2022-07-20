@@ -4,17 +4,6 @@ import FirstBoot from "../components/BootCamp/FirstBoot.vue";
 </script>
 <script>
 export default {
-  props: {
-    href: {
-      type: String,
-      default: "Joe",
-    },
-  },
-  data() {
-    return {
-      hreff: "home",
-    };
-  },
   components: {
     BootCamp,
     FirstBoot,
@@ -29,7 +18,7 @@ export default {
 <template>
   <div class="overlay-color">
     <div
-      class="absolute lg:left-44 md:left-16 md:top-50 top-52 left-6 sm:left-24 w-[200] my-auto flex container max-w-xll"
+      class="absolute lg:left-[10%] md:top-50 top-52 left-[1%] w-[200] my-auto flex container max-w-xll"
     >
       <p class="sm:text-[55px] text-[30px] font-black text-[#fff] absolute">
         VIRTUAL BOOTCAMPS
@@ -132,11 +121,13 @@ export default {
           </ul>
         </div>
         <div class="md:w-1/2 w-full px-3 lg:px-0">
-          <FirstBoot show="kji">
+          <FirstBoot
+            href="/products/python-for-data-science-&-machine-learning-bootcamp-full-payment"
+          >
             <template #level>One-off Full Payment (UK/Europe/Canada)</template>
             <template #price>&#163;400</template>
           </FirstBoot>
-          <FirstBoot show="kdkdi">
+          <FirstBoot href="#">
             <template #level>50% Discount (Nigeria/Rest of Africa))</template>
             <template #price>N150K or 💲250</template>
           </FirstBoot>
@@ -263,12 +254,12 @@ export default {
     </div>
     <div class="mt-16">
       <div class="block lg:flex lg:w-[80%] m-auto">
-        <BootCamp href="paymeeent">
+        <BootCamp href="/products/high-impact-careers-bootcamp-full-payment">
           <template #level>Full Payment (UK, Europe, Canada)</template>
           <template #years>One-off Full Payment</template>
           <template #price>550</template>
         </BootCamp>
-        <BootCamp href="payment">
+        <BootCamp href="/products/high-impact-careers-bootcamp-part-payment">
           <template #level>Part Payment (UK, Europe, Canada)</template>
           <template #years>2 Instalmental Payments (total £600)</template>
           <template #price>300</template>
@@ -277,15 +268,15 @@ export default {
     </div>
     <div class="my-8">
       <div class="block lg:flex lg:w-[80%] m-auto">
-        <BootCamp>
+        <BootCamp showEuro="true" href="#">
           <template #level>50% Discount (Nigeria)</template>
           <template #years>One-off Full Payment</template>
-          <template #price>₦550</template>
+          <template #price>₦175,000</template>
         </BootCamp>
-        <BootCamp>
+        <BootCamp showEuro="true" href="#">
           <template #level>50% Discount (Rest of Africa)</template>
           <template #years>One-off Full Payment</template>
-          <template #price>💲375</template>
+          <template #price>$375</template>
         </BootCamp>
       </div>
     </div>
