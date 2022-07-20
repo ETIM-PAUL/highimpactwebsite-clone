@@ -6,10 +6,24 @@ import { store, euro, link } from "../../main";
 import HeaderItem from "./HeaderItem.vue";
 import HeaderNavLink from "./HeaderNavLink.vue";
 import SideCart from "../SideCart.vue";
-
+import { onClickOutside } from "@vueuse/core";
+import { ref } from "vue";
 const { itemsTotal } = storeToRefs(store);
 </script>
+
 <script>
+const cart = ref(null);
+const modal = ref(false);
+onClickOutside(cart, () => {
+  if (modal.value) {
+    let toggle = document.querySelector(".cartt");
+    let overlay = document.querySelector(".overlayy");
+    toggle.classList.add("remove-cart");
+    overlay.classList.toggle("overlay");
+    toggle.classList.remove("show-cart");
+    modal.value = false;
+  }
+});
 export default {
   props: {
     initialLink: {
@@ -59,12 +73,14 @@ export default {
       toggle.classList.add("show-cart");
       toggle.classList.toggle("cart");
       overlay.classList.toggle("overlay");
+      modal.value = true;
     },
     hideCart() {
       let overlay = this.$refs.overlayDiv;
       overlay.classList.toggle("overlay");
       let toggle = this.$refs.cart;
       toggle.classList.add("remove-cart");
+      modal.value = false;
       toggle.classList.remove("show-cart");
     },
     dropdown() {
@@ -95,16 +111,16 @@ export default {
       let price = euro(store.itemsTotalPrice).format();
       return price;
     },
-    hidePopUps() {
-      console.log("all");
-    },
   },
 };
 </script>
 
 <template>
-  <div ref="cart" class="cart absolute w-[350px] bg-white z-30 top-0 h-full">
-    <div class="flex justify-end" v-click-outside="hidePopUps()">
+  <div
+    ref="cart"
+    class="cart cartt absolute w-[350px] bg-white z-30 top-0 h-full"
+  >
+    <div class="flex justify-end">
       <span
         @click="hideCart()"
         class="hide-cart pr-10 pt-6 text-4xl text-[#464646] font-bold inline-end cursor-pointer"
@@ -113,9 +129,10 @@ export default {
     </div>
     <SideCart />
   </div>
-  <div ref="overlayDiv"></div>
+  <div ref="overlayDiv" class="overlayy"></div>
 
   <nav
+    ref="overlayDivv"
     class="height-css bg-white border-gray-200 lg:px-2 py-2 lg:pt-5 my-auto white:bg-gray-800 lg:h-[70px] h-[60px] sm:block"
   >
     <div

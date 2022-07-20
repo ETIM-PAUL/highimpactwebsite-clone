@@ -11,7 +11,7 @@
 
   <div class="bg-white-700">
     <div class="w-[95%] sm:w-[80%] m-auto">
-      <div class="mt-24 relative">
+      <div class="mt-0 md:mt-24 relative">
         <div class="py-1">
           <p class="relative text-black font-bold text-[20px]">
             OPTIMISING YOUR LINKEDIN PROFILE TO ADVANCE YOUR CAREER

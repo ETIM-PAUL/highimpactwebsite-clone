@@ -324,6 +324,11 @@ body {
   background-color: rgb(224 242 254);
 }
 
+.active-footer {
+  color: rgb(125 211 252) !important;
+
+}
+
 @media only screen and (max-width: 1024px) {
   .active {
     color: black !important;

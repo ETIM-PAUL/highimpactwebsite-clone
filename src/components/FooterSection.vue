@@ -19,21 +19,23 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('about')"
-                v-bind:class="link.link === 'about' ? 'active' : null"
+                v-bind:class="link.link === 'about' ? 'active-footer' : null"
               >
                 <RouterLink to="/about-us">About Us</RouterLink>
               </li>
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('resources')"
-                v-bind:class="link.link === 'resources' ? 'active' : null"
+                v-bind:class="
+                  link.link === 'resources' ? 'active-footer' : null
+                "
               >
                 <RouterLink to="/resources">Resources</RouterLink>
               </li>
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('contact')"
-                v-bind:class="link.link === 'contact' ? 'active' : null"
+                v-bind:class="link.link === 'contact' ? 'active-footer' : null"
               >
                 <RouterLink to="/contact-us">Contact Us</RouterLink>
               </li>
@@ -53,7 +55,7 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('bizTrans')"
-                v-bind:class="link.link === 'bizTrans' ? 'active' : null"
+                v-bind:class="link.link === 'bizTrans' ? 'active-footer' : null"
               >
                 <RouterLink to="/business-transformation">
                   Business Transformation
@@ -62,7 +64,7 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('exeEdu')"
-                v-bind:class="link.link === 'exeEdu' ? 'active' : null"
+                v-bind:class="link.link === 'exeEdu' ? 'active-footer' : null"
               >
                 <RouterLink to="/executive-education"
                   >Executive Education</RouterLink
@@ -71,14 +73,14 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('branding')"
-                v-bind:class="link.link === 'branding' ? 'active' : null"
+                v-bind:class="link.link === 'branding' ? 'active-footer' : null"
               >
                 <RouterLink to="/cv-services">Personal Branding</RouterLink>
               </li>
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('recruit')"
-                v-bind:class="link.link === 'recruit' ? 'active' : null"
+                v-bind:class="link.link === 'recruit' ? 'active-footer' : null"
               >
                 <RouterLink to="/recruitment-for-employers"
                   >Recruitment for Employers</RouterLink
@@ -96,7 +98,7 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('agile')"
-                v-bind:class="link.link === 'agile' ? 'active' : null"
+                v-bind:class="link.link === 'agile' ? 'active-footer' : null"
               >
                 <RouterLink to="/agile-fundamentals"
                   >Agile Fundamentals</RouterLink
@@ -105,7 +107,7 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('bizAna')"
-                v-bind:class="link.link === 'bizAna' ? 'active' : null"
+                v-bind:class="link.link === 'bizAna' ? 'active-footer' : null"
               >
                 <RouterLink to="/business-analysis"
                   >Business Analysis</RouterLink
@@ -114,7 +116,7 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('cyber')"
-                v-bind:class="link.link === 'cyber' ? 'active' : null"
+                v-bind:class="link.link === 'cyber' ? 'active-footer' : null"
               >
                 <RouterLink to="/technology-and-cyber-security"
                   >Cyber Security</RouterLink
@@ -123,14 +125,14 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('dataAna')"
-                v-bind:class="link.link === 'dataAna' ? 'active' : null"
+                v-bind:class="link.link === 'dataAna' ? 'active-footer' : null"
               >
                 <RouterLink to="/data-analysis">Data Analysis</RouterLink>
               </li>
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('digital')"
-                v-bind:class="link.link === 'digital' ? 'active' : null"
+                v-bind:class="link.link === 'digital' ? 'active-footer' : null"
               >
                 <RouterLink to="/digital-marketing"
                   >Digital Marketing</RouterLink
@@ -139,7 +141,7 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('prodMan')"
-                v-bind:class="link.link === 'prodMan' ? 'active' : null"
+                v-bind:class="link.link === 'prodMan' ? 'active-footer' : null"
               >
                 <RouterLink to="/product-management"
                   >Product Management</RouterLink
@@ -148,7 +150,7 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('proMan')"
-                v-bind:class="link.link === 'proMan' ? 'active' : null"
+                v-bind:class="link.link === 'proMan' ? 'active-footer' : null"
               >
                 <RouterLink to="/project-management"
                   >Project Management</RouterLink
@@ -157,7 +159,7 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('soft')"
-                v-bind:class="link.link === 'soft' ? 'active' : null"
+                v-bind:class="link.link === 'soft' ? 'active-footer' : null"
               >
                 <RouterLink to="/software-engineering"
                   >Software Engineering</RouterLink
@@ -166,7 +168,7 @@ import { link } from "../main";
               <li
                 class="mb-3 hover:text-[#ff6900] cursor-pointer"
                 @click="link.setLink('user')"
-                v-bind:class="link.link === 'user' ? 'active' : null"
+                v-bind:class="link.link === 'user' ? 'active-footer' : null"
               >
                 <RouterLink to="/user-experience">User Experience</RouterLink>
               </li>

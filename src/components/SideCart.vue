@@ -88,7 +88,6 @@ export default {
       <div class="mx-auto w-[90%] h-[1px] bg-[#e1e1e1] mb-[10px]"></div>
     </li>
   </ul>
-  <div class="mx-auto w-[90%] h-[1px] bg-[#e1e1e1]"></div>
   <div class="mx-auto w-[90%] my-6 text-[20px] text-center">
     <span class="font-black">Total</span>: {{ formatTotalPrice() }}
   </div>

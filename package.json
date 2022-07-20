@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@formkit/vue": "^1.0.0-beta.9",
+    "@vueuse/core": "^8.9.4",
     "currency.js": "^2.0.4",
     "pinia": "^2.0.15",
     "pinia-plugin-persist": "^1.0.0",
