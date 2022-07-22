@@ -21,7 +21,7 @@
       <div><img src="../../assets/sponsors/who.png" /></div>
       <div><img src="../../assets/sponsors/visa.png" /></div>
       <div><img src="../../assets/sponsors/university.png" /></div>
-      <div><img src="../../assets/sponsors/tek experts.png" /></div>
+      <div><img src="../../assets/sponsors/experts.png" /></div>
       <div><img src="../../assets/sponsors/suxes.png" /></div>
       <div><img src="../../assets/sponsors/mtn.png" /></div>
       <div><img src="../../assets/sponsors/mastercard.png" /></div>
