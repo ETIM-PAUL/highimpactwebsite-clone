@@ -42,7 +42,5 @@
   right: 0;
   bottom: 0;
   min-width: 100%;
-  /* height: 80%; */
-  /* width: 100vmin; */
 }
 </style>

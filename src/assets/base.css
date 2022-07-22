@@ -81,14 +81,6 @@ body {
   opacity: 0.5;
 }
 
-#btnControl {
-  display: none;
-}
-
-.showOverlay:click .showOverlay {
-  display: block
-}
-
 .marque {
   /* Starting position */
   -moz-transform: translateX(50%);

@@ -388,7 +388,7 @@ export default {
               v-bind:class="link.link === 'resources' ? 'active' : null"
               name="resources"
               to="/resources"
-              class="currentLink font-bold text-black block py-6 lg:py-0 px-1 uppercase lg:hover:text-sky-300"
+              class="currentLink font-bold text-black block py-5 lg:py-0 px-1 uppercase lg:hover:text-sky-300"
             >
               Resources
             </RouterLink>
