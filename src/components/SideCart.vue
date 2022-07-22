@@ -51,8 +51,7 @@ export default {
             +
           </button>
           <p
-            type="number"
-            class="p-2 w-[40px] flex items-center h-[20px] text-[#000]"
+            class="p-2 w-[32px] flex items-center justify-start h-[20px] text-[#000]"
           >
             {{ product.amount }}
           </p>
