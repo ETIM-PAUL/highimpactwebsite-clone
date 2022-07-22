@@ -1,7 +1,9 @@
 <template>
   <section class="bg-[#fff] w-[90%] m-auto">
     <div class="">
-      <div class="w-[200] my-auto block container text-[#000] mt-28 ...">
+      <div
+        class="w-[200] my-auto block container text-[#000] mt-8 md:mt-28 mx-auto"
+      >
         <h1 class="font-black text-[35px]">Our Services</h1>
         <h3 class="pt-3">
           We combine our vast experience to deliver a complete suite of

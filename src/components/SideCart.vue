@@ -37,7 +37,7 @@ export default {
             {{ product.name }} ~ {{ product.selectedCourse }}
           </p>
         </div>
-        <div class="my-5">
+        <div class="my-1">
           <button
             @click="
               store.increaseItemQuantity(
@@ -51,7 +51,7 @@ export default {
             +
           </button>
           <p
-            class="p-2 w-[32px] flex items-center justify-start h-[20px] text-[#000]"
+            class="p-2 w-[32px] pl-[5px] flex items-center justify-start h-[20px] text-[#000] my-4"
           >
             {{ product.amount }}
           </p>
