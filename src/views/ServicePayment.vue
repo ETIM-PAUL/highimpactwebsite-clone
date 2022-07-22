@@ -3,11 +3,13 @@ import { store, euro } from "../main";
 import { products } from "../json/products.json";
 import { useRoute } from "vue-router";
 import currency from "currency.js";
+import { ref } from "vue";
 
 const route = useRoute();
 const product = products.filter(
   (product) => product.slug === route.params.slug
 );
+const selected = ref({});
 </script>
 <script>
 export default {
@@ -15,7 +17,6 @@ export default {
     return {
       initialQuantity: 1,
       visibility: true,
-      selected: "",
       subTotal: 0,
       errorMessage: false,
     };

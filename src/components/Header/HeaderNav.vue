@@ -128,7 +128,7 @@ export default {
 <template>
   <div
     ref="cart"
-    class="cart cartt absolute w-[300px] sm:w-[350px] bg-white z-30 top-0 h-full"
+    class="cart cartt absolute w-[330px] sm:w-[350px] bg-white z-30 top-0 h-full"
   >
     <div class="flex justify-end">
       <span

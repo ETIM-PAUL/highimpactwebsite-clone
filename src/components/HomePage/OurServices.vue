@@ -16,7 +16,7 @@
           <img
             src="../../assets/image1.jpg"
             alt="image"
-            class="object-cover h-[300px] sm:object-fill sm:h-[auto] md:h-[300px] md:object-cover"
+            class="object-cover sm:object-fill sm:h-[auto] md:h-[300px] md:object-cover"
           />
           <span
             class="text-2xl absolute bottom-8 text-bold p-4 text-white font-black"
@@ -28,7 +28,7 @@
           <img
             src="../../assets/image2.jpg"
             alt="image"
-            class="object-cover h-[300px] sm:object-fill sm:h-[auto] md:h-[300px] md:object-cover"
+            class="object-cover sm:object-fill sm:h-[auto] md:h-[300px] md:object-cover"
           />
           <span
             class="text-2xl absolute bottom-8 text-bold p-4 text-white font-black"
@@ -39,7 +39,7 @@
           <img
             src="../../assets/image3.jpg"
             alt="image"
-            class="object-cover h-[300px] sm:object-fill sm:h-[auto] md:h-[300px] md:object-cover"
+            class="object-cover sm:object-fill sm:h-[auto] md:h-[300px] md:object-cover"
           />
           <span
             class="text-2xl absolute bottom-8 text-bold p-4 text-white font-black"
@@ -50,7 +50,7 @@
           <img
             src="../../assets/image4.jpg"
             alt="image"
-            class="object-cover h-[300px] sm:object-fill sm:h-[auto] md:h-[300px] md:object-cover"
+            class="object-cover sm:object-fill sm:h-[auto] md:h-[300px] md:object-cover"
           />
           <span
             class="text-2xl absolute bottom-8 text-bold p-4 text-white font-black"
