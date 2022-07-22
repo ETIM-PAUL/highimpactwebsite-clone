@@ -146,7 +146,7 @@ export default {
     class="height-css bg-white border-gray-200 lg:px-2 py-2 lg:pt-5 my-auto white:bg-gray-800 lg:h-[70px] h-[60px] sm:block"
   >
     <div
-      class="flex flex-wrap lg:justify-around justify-between items-center m-auto align-center"
+      class="flex flex-wrap lg:justify-around justify-between items-center m-auto align-center mt-[-8px]"
     >
       <button
         v-if="!show"
