@@ -4,7 +4,7 @@ import HeaderNav from "./components/Header/HeaderNav.vue";
 import FooterSection from "./components/FooterSection.vue";
 </script>
 
-<template>
+<template class="overflow-hidden">
   <HeaderNav />
   <RouterView />
   <FooterSection />

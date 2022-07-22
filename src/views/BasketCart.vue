@@ -97,33 +97,33 @@ export default {
       </table>
 
       <table class="table-fixed block sm:hidden">
-        <thead class="bg-[#2A2A5E] text-white w-full">
-          <tr>
-            <th class="py-2 px-12 font-black">Image</th>
-            <th class="py-2 px-12 font-black">Name</th>
-            <th class="py-2 px-12 font-black">Quantity</th>
+        <thead class="bg-[#2A2A5E] text-white w-full inline-block">
+          <tr class="flex justify-between">
+            <th class="py-2 px-3 xs:px-10 font-black">Image</th>
+            <th class="py-2 px-0 font-black">Name</th>
+            <th class="py-2 px-3 xs:px-10 font-black">Quantity</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="w-[100%] inline-table">
           <tr v-for="product in cartItems" v-bind:key="product.name">
-            <td class="p-4">
+            <td class="p-2 sm:p-4">
               <img
                 v-bind:src="product.image"
-                class="w-[80px] h-[80px] min-w-[80px] max-w-[80px] object-cover"
+                class="w-[60px] h-[60px] min-w-[80px] max-w-[80px] object-cover"
               />
               <p>{{ product.unitPrice }} x {{ product.amount }}</p>
               <button
                 @click="store.removeItem(product)"
-                class="items-center p-2 ml-1 text-sm hover:bg-[#2A2A5E] text-black-500 rounded-lg absolute top-[-2px] left-[75px]"
+                class="items-center p-2 ml-1 text-sm hover:bg-[#2A2A5E] text-black-500 rounded-lg absolute top-[6px] left-[65px]"
               >
                 <IconHide />
               </button>
             </td>
 
-            <td class="p-4 text-[11px]">
+            <td class="sm:p-4 p-2 text-[11px]">
               {{ product.name }} ({{ product.selectedCourse }})
             </td>
-            <td class="px-12 block mt-4">
+            <td class="block mt-4">
               <button
                 @click="
                   store.decreaseItemQuantity(

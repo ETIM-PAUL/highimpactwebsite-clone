@@ -37,7 +37,7 @@ export default {
             {{ product.name }} ~ {{ product.selectedCourse }}
           </p>
         </div>
-        <div class="my-8">
+        <div class="my-5">
           <button
             @click="
               store.increaseItemQuantity(

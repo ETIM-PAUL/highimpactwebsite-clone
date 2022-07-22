@@ -114,7 +114,10 @@ export default {
           <p class="my-7 pl-2 pr-2 lg:pr-24">Please select a course</p>
           <div class="border-r mr-3"></div>
           <div>
-            <select class="p-4 my-3 rounded-md pr-24" v-model="selected">
+            <select
+              class="sm:p-4 p-5 my-3 rounded-md sm:pr-24"
+              v-model="selected"
+            >
               <optgroup>
                 <option disabled value="">Please select one</option>
                 <option @click="visibility = true">None</option>
@@ -175,7 +178,7 @@ export default {
           min="1"
           v-model="initialQuantity"
           type="number"
-          class="p-2 border w-[55px] focused:border-[#f1f1f1] h-[40px] text-[#000]"
+          class="p-2 border w-[50px] focused:border-[#f1f1f1] h-[40px] text-[#000]"
         />
         <button
           @click="initialQuantity++"
@@ -183,7 +186,7 @@ export default {
         >
           +
         </button>
-        <div class="flex justify-center align-center mx-4">
+        <div class="flex justify-center align-center mx-1 md:mx-4">
           <button
             @click="
               store.addItem(

@@ -53,10 +53,20 @@ export default {
     };
   },
   methods: {
-    greet() {
+    showMenu() {
       let toggle = this.$refs.mobile;
       toggle.classList.toggle("hidden");
-      toggle.classList.toggle("toggle-menu");
+      toggle.classList.remove("remove-menu");
+      toggle.classList.add("toggle-menu");
+    },
+    hideMenu() {
+      let toggle = this.$refs.mobile;
+      setTimeout(() => {
+        toggle.classList.toggle("hidden");
+      }, 500);
+      toggle.classList.add("remove-menu");
+      toggle.classList.remove("toggle-menu");
+      this.show = false;
     },
     showMobileMenu() {
       let toggle = this.$refs.mobileSubMenu;
@@ -118,7 +128,7 @@ export default {
 <template>
   <div
     ref="cart"
-    class="cart cartt absolute w-[350px] bg-white z-30 top-0 h-full"
+    class="cart cartt absolute w-[300px] bg-white z-30 top-0 h-full"
   >
     <div class="flex justify-end">
       <span
@@ -140,7 +150,7 @@ export default {
     >
       <button
         v-if="!show"
-        @click="(show = true), greet()"
+        @click="(show = true), showMenu()"
         ref="toggleMenu"
         data-collapse-toggle="mobile-menu-2"
         type="button"
@@ -153,7 +163,7 @@ export default {
       </button>
       <button
         v-if="show"
-        @click="(show = false), greet()"
+        @click="hideMenu()"
         ref="toggleMenu"
         data-collapse-toggle="mobile-menu-2"
         type="button"
@@ -168,7 +178,7 @@ export default {
         <img
           src="../icons/tailwind.config.png"
           @click="link.setLink('home')"
-          class="mr-3 sm:h-[39px] h-[25px] sm:pt-2"
+          class="sm:h-[39px] w-[200px] sm:w-[270px] sm:pt-2"
           alt="High-Impact-Career-logo"
         />
       </RouterLink>
@@ -205,7 +215,7 @@ export default {
             class="h-[60px] text-gray-700 text-center border-gray-100 hover:bg-sky-300 lg:hover:bg-transparent lg:border-0 lg:hover:text-sky-700 lg:p-0 dark:text-black-900 lg:dark:hover:text-red dark:hover:bg-sky-100 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 text-[13px]"
           >
             <RouterLink
-              @click="link.setLink('about')"
+              @click="link.setLink('about'), (show = false), hideMenu()"
               v-bind:class="link.link === 'about' ? 'active' : null"
               to="/about-us"
               name="about"
@@ -252,7 +262,11 @@ export default {
             </div>
           </li>
           <div class="hidden lg:hidden" ref="mobileSubMenu2">
-            <HeaderItem to="/business-transformation" name="bizTrans">
+            <HeaderItem
+              to="/business-transformation"
+              name="bizTrans"
+              @hideMenu="hideMenu"
+            >
               <template #item>Business Transformation</template>
             </HeaderItem>
             <HeaderItem to="/executive-education" name="exeEdu">
@@ -356,7 +370,7 @@ export default {
             class="h-[60px] text-gray-700 text-center border-gray-100 hover:bg-sky-300 lg:hover:bg-transparent lg:border-0 lg:hover:text-sky-700 lg:p-0 dark:text-black-900 lg:dark:hover:text-red dark:hover:bg-sky-100 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 text-[13px]"
           >
             <RouterLink
-              @click="link.setLink('branding')"
+              @click="link.setLink('branding'), hideMenu()"
               v-bind:class="link.link === 'branding' ? 'active' : null"
               name="branding"
               to="/cv-services"
@@ -370,7 +384,7 @@ export default {
             class="h-[60px] text-gray-700 text-center border-gray-100 hover:bg-sky-300 lg:hover:bg-transparent lg:border-0 lg:hover:text-sky-700 lg:p-0 dark:text-black-900 lg:dark:hover:text-red dark:hover:bg-sky-100 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 text-[13px]"
           >
             <RouterLink
-              @click="link.setLink('bootcamp')"
+              @click="link.setLink('bootcamp'), hideMenu()"
               name="bootcamp"
               v-bind:class="link.link === 'bootcamp' ? 'active' : null"
               to="/bootcamp"
@@ -384,7 +398,7 @@ export default {
             class="h-[60px] text-gray-700 text-center border-gray-100 hover:bg-sky-300 lg:hover:bg-transparent lg:border-0 lg:hover:text-sky-700 lg:p-0 dark:text-black-900 lg:dark:hover:text-red dark:hover:bg-sky-100 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 text-[13px]"
           >
             <RouterLink
-              @click="link.setLink('resources')"
+              @click="link.setLink('resources'), hideMenu()"
               v-bind:class="link.link === 'resources' ? 'active' : null"
               name="resources"
               to="/resources"
