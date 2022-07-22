@@ -127,7 +127,7 @@ export default {
         >✕</span
       >
     </div>
-    <SideCart />
+    <SideCart @hideCart="hideCart" />
   </div>
   <div ref="overlayDiv" class="overlayy"></div>
 

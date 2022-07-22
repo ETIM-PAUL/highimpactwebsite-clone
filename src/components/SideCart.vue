@@ -8,20 +8,12 @@ const { cartItems } = storeToRefs(store);
 <script>
 export default {
   methods: {
-    showCart() {
-      let toggle = this.$refs.cart;
-      toggle.classList.remove("remove-cart");
-      toggle.classList.add("show-cart");
-      toggle.classList.toggle("cart");
-    },
-    hideCart() {
-      let toggle = this.$refs.cart;
-      toggle.classList.add("remove-cart");
-      toggle.classList.remove("show-cart");
-    },
     formatTotalPrice() {
       let price = euro(store.itemsTotalPrice).format();
       return price;
+    },
+    hideCart() {
+      this.$emit("hideCart");
     },
   },
 };
@@ -94,12 +86,14 @@ export default {
   <div class="mx-auto w-[90%] h-[1px] bg-[#e1e1e1]"></div>
   <div class="mx-auto w-[90%] my-4 flex justify-between">
     <RouterLink to="/basket/"
-      ><button class="bg-[#2A2A5E] p-4 text-white">
+      ><button class="bg-[#2A2A5E] p-4 text-white" @click="hideCart">
         View Basket
       </button></RouterLink
     >
     <RouterLink to="/checkout">
-      <button class="bg-[#FE8D45] p-4 text-white">Checkout</button></RouterLink
+      <button class="bg-[#FE8D45] p-4 text-white" @click="hideCart">
+        Checkout
+      </button></RouterLink
     >
   </div>
 </template>
