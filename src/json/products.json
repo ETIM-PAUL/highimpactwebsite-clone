@@ -4,7 +4,7 @@
       "name": "Python for Data Science & Machine Learning Bootcamp - Full Payment",
       "slug": "python-for-data-science-&-machine-learning-bootcamp-full-payment",
       "price": "400.00",
-      "imageUrl": "productImages/laptops.jpg",
+      "imageUrl": "/productImages/laptops.jpg",
       "type": "course"
     },
     {
@@ -37,7 +37,7 @@
           "amount": "550.00"
         }
       ],
-      "imageUrl": "productImages/laptops.jpg",
+      "imageUrl": "/productImages/laptops.jpg",
       "type": "bootcamp"
     },
     {
@@ -62,7 +62,7 @@
           "amount": "100.00"
         }
       ],
-      "imageUrl": "productImages/entry.jpg",
+      "imageUrl": "/productImages/entry.jpg",
       "type": "service"
     },
     {
@@ -95,7 +95,7 @@
           "amount": "300.00"
         }
       ],
-      "imageUrl": "productImages/laptops.jpg",
+      "imageUrl": "/productImages/laptops.jpg",
       "type": "bootcamp"
     },
     {
@@ -120,7 +120,7 @@
           "amount": "125.00"
         }
       ],
-      "imageUrl": "productImages/mid.png",
+      "imageUrl": "/productImages/mid.png",
       "type": "service"
     },
     {
@@ -145,7 +145,7 @@
           "amount": "150.00"
         }
       ],
-      "imageUrl": "productImages/senior.jpg",
+      "imageUrl": "/productImages/senior.jpg",
       "type": "service"
     }
   ]

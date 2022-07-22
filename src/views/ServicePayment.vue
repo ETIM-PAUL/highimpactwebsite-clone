@@ -11,13 +11,27 @@ const product = products.filter(
 </script>
 <script>
 export default {
+  data() {
+    return {
+      initialQuantity: 1,
+      visibility: true,
+      selected: "",
+      subTotal: 0,
+      errorMessage: false,
+    };
+  },
   methods: {
     addToCart: function (name, price, quantity, image, course) {
       store.addItem(name, price, quantity, image, course); //like this
     },
-    setOption: function (subTotal) {
-      this.visibility = false;
-      this.subTotal = euro(subTotal).format();
+    setOption: function () {
+      let value = this.selected.amount;
+      if (this.selected.name === undefined) {
+        this.visibility = true;
+      } else {
+        this.visibility = false;
+      }
+      this.subTotal = euro(value).format();
     },
     decreaseQua: function () {
       if (this.initialQuantity == 1) {
@@ -30,21 +44,12 @@ export default {
       return d;
     },
   },
-  data() {
-    return {
-      initialQuantity: 1,
-      visibility: true,
-      selected: "",
-      subTotal: 0,
-      errorMessage: false,
-    };
-  },
 };
 </script>
 
 <template>
   <div
-    class="md:flex md:gap-4 p-4 lg:p-0 lg:w-[82%] m-auto relative justify- md:my-24 flex-wr"
+    class="md:flex md:gap-4 p-4 lg:p-0 lg:w-[82%] m-auto relative justify- md:my-8"
   >
     <div class="p md:w-1/2">
       <img v-bind:src="product[0].imageUrl" />
@@ -109,35 +114,34 @@ export default {
       </div>
       <p class="font-black text-3xl pt-2">{{ product[0].price }}</p>
 
-      <div class="mt-16 bg-[#f7f7f7]" v-if="product[0].type !== 'course'">
-        <div class="border text-sm border-[#e1e1e1] border-solid flex">
-          <p class="my-7 pl-2 pr-2 lg:pr-24">Please select a course</p>
+      <div class="my-8 bg-[#f7f7f7]" v-if="product[0].type !== 'course'">
+        <div class="border text-sm border-[#e1e1e1] border-solid flex h-[60px]">
+          <p class="flex items-center p-2">Please select a course</p>
           <div class="border-r mr-3"></div>
-          <div>
-            <select
-              class="sm:p-4 p-5 my-3 rounded-md sm:pr-24"
-              v-model="selected"
-            >
-              <optgroup>
-                <option disabled value="">Please select one</option>
-                <option @click="visibility = true">None</option>
-                <option
-                  @click="setOption(option.amount)"
-                  v-for="option in product[0].options"
-                  v-bind:key="option.name"
-                  v-bind:value="option.name"
-                >
-                  {{ option.name }}&nbsp;&#163;{{ option.amount }}
-                </option>
-              </optgroup>
-            </select>
-          </div>
+          <select
+            class="sm:p-4 my-1 rounded-md lg:pr-24"
+            v-model="selected"
+            @change="setOption()"
+          >
+            <optgroup>
+              <option disabled value="">Please select one</option>
+              <option @click="visibility = true">None</option>
+              <option
+                v-for="option in product[0].options"
+                v-bind:key="option.name"
+                v-bind:value="option"
+                v-bind:amount="option.name"
+              >
+                {{ option.name }}&nbsp;&#163;{{ option.amount }}
+              </option>
+            </optgroup>
+          </select>
         </div>
       </div>
 
       <table
         :class="{ hidden: visibility }"
-        class="border-collapse border md:my-20 my-10 w-[100%]"
+        class="border-collapse border md:my-16 my-10 w-[100%]"
       >
         <thead>
           <tr class="bg-[#f7f7f7]">
@@ -152,7 +156,7 @@ export default {
           </tr>
           <tr>
             <td class="border p-4 text-sm bg-[#f7f7f7]">
-              Selected Option - {{ selected }}
+              Selected Option - {{ selected.name }}
             </td>
             <td class="border p-4 text-[#000] bg-[#f7f7f7] text-sm">
               {{ subTotal }}
@@ -195,7 +199,7 @@ export default {
                 subTotal,
                 initialQuantity,
                 product[0].imageUrl,
-                selected
+                selected.name
               )
             "
             class="w-[150px] rounded-lg border bg-[#2A2A5E] bg-[#2A2A5E] text-[#fff]"

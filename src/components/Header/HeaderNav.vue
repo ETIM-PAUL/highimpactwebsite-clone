@@ -133,7 +133,7 @@ export default {
     <div class="flex justify-end">
       <span
         @click="hideCart()"
-        class="hide-cart pr-10 pt-6 text-4xl text-[#464646] font-bold inline-end cursor-pointer"
+        class="hide-cart pr-10 pt-6 text-[30px] text-[#464646] font-bold inline-end cursor-pointer"
         >✕</span
       >
     </div>
@@ -143,10 +143,10 @@ export default {
 
   <nav
     ref="overlayDivv"
-    class="height-css bg-white border-gray-200 lg:px-2 py-2 lg:pt-5 my-auto white:bg-gray-800 lg:h-[70px] h-[60px] sm:block"
+    class="height-css bg-white border-gray-200 lg:px-2 py-2 lg:pt-[15px] my-auto white:bg-gray-800 lg:h-[70px] h-[60px] sm:block"
   >
     <div
-      class="flex flex-wrap lg:justify-around justify-between items-center m-auto align-center mt-[-8px]"
+      class="flex flex-wrap lg:justify-around justify-between items-center m-auto align-center"
     >
       <button
         v-if="!show"
@@ -193,7 +193,7 @@ export default {
         >
           <span class="sr-only">Open user menu</span>
           <img
-            class="w-8 h-8 rounded-lg"
+            class="w-[25px] h-8 rounded-lg"
             src="../../assets/cart.svg"
             alt="cart photo"
           />

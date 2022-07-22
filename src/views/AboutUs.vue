@@ -61,7 +61,7 @@
             to help companies hire Top Black and African Talents.
           </p>
         </div>
-        <div class="pt-10 mb-44">
+        <div class="pt-10 md:mb-44 mb-16">
           <p class="relative text-black font-bold">Personal Branding</p>
           <p class="relative text-black pt-4 text-left">
             If you are job hunting you need an outstanding achievement-based

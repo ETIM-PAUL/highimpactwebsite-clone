@@ -124,7 +124,7 @@
             <li class="py-2">Risk Analyst</li>
           </ul>
         </div>
-        <div class="pt-1 mb-44">
+        <div class="pt-1 md:mb-44 mb-16">
           <p class="relative text-black pt-4 text-left leading-[1.5em]">
             <span class="text-black font-black">
               Course Price: £550/$750 (VAT Inclusive)
