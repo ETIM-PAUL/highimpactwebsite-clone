@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-  <ul class="items-center text-base cursor-pointer pt-10">
+  <ul class="items-center text-base cursor-pointer pt-3">
     <li v-for="product in cartItems" v-bind:key="product.name">
       <div class="py-2 px-6 w-full flex">
         <div class="w-[120px] p-2">
@@ -52,7 +52,7 @@ export default {
           </button>
           <p
             type="number"
-            class="p-2 w-[40px] flex items-center h-[20px] text-[#000] justify-start"
+            class="p-2 w-[40px] flex items-center h-[20px] text-[#000]"
           >
             {{ product.amount }}
           </p>
