@@ -20,11 +20,13 @@ export default {
       errorMessage: false,
     };
   },
+  emits: ["update:selected"],
   methods: {
     addToCart: function (name, price, quantity, image, course) {
       store.addItem(name, price, quantity, image, course); //like this
     },
     setOption: function () {
+      console.log(this.selected);
       let value = this.selected.amount;
       if (this.selected.name === undefined) {
         this.visibility = true;
@@ -120,8 +122,8 @@ export default {
           <div class="border-r mr-3"></div>
           <select
             class="sm:p-4 my-1 rounded-md lg:pr-24"
-            v-model="selected"
             @change="setOption()"
+            v-model="selected"
           >
             <optgroup>
               <option disabled value="">Please select one</option>
@@ -129,7 +131,7 @@ export default {
               <option
                 v-for="option in product[0].options"
                 v-bind:key="option.name"
-                :value="option"
+                :value="{ name: option.name, amount: option.amount }"
               >
                 {{ option.name }}&nbsp;&#163;{{ option.amount }}
               </option>
