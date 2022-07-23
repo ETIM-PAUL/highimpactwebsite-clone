@@ -265,14 +265,22 @@ export default {
             <HeaderItem
               to="/business-transformation"
               name="bizTrans"
-              @hideMenu="hideMenu"
+              @hideMenu="hideMenu()"
             >
               <template #item>Business Transformation</template>
             </HeaderItem>
-            <HeaderItem to="/executive-education" name="exeEdu">
+            <HeaderItem
+              to="/executive-education"
+              name="exeEdu"
+              @hideMenu="hideMenu()"
+            >
               <template #item>Executive Education</template>
             </HeaderItem>
-            <HeaderItem to="/recruitment-for-employers" name="recruit">
+            <HeaderItem
+              to="/recruitment-for-employers"
+              name="recruit"
+              @hideMenu="hideMenu()"
+            >
               <template #item>Recruitment for Employers</template>
             </HeaderItem>
           </div>
@@ -337,31 +345,67 @@ export default {
             </div>
           </li>
           <div class="hidden lg:hidden" ref="mobileSubMenu">
-            <HeaderItem to="/agile-fundamentals" name="agile">
+            <HeaderItem
+              to="/agile-fundamentals"
+              name="agile"
+              @hideMenu="hideMenu()"
+            >
               <template #item>Agile Fundamentals</template>
             </HeaderItem>
-            <HeaderItem to="/business-analysis" name="bizAna">
+            <HeaderItem
+              to="/business-analysis"
+              name="bizAna"
+              @hideMenu="hideMenu()"
+            >
               <template #item>Business Analysis</template>
             </HeaderItem>
-            <HeaderItem to="/technology-and-cyber-security" name="cyber">
+            <HeaderItem
+              to="/technology-and-cyber-security"
+              name="cyber"
+              @hideMenu="hideMenu()"
+            >
               <template #item>Cyber Security</template>
             </HeaderItem>
-            <HeaderItem to="/data-analysis" name="dataAna">
+            <HeaderItem
+              to="/data-analysis"
+              name="dataAna"
+              @hideMenu="hideMenu()"
+            >
               <template #item>Data Analysis</template>
             </HeaderItem>
-            <HeaderItem to="/digital-marketing" name="digital">
+            <HeaderItem
+              to="/digital-marketing"
+              name="digital"
+              @hideMenu="hideMenu()"
+            >
               <template #item>Digital Marketing</template>
             </HeaderItem>
-            <HeaderItem to="/product-management" name="prodMan">
+            <HeaderItem
+              to="/product-management"
+              name="prodMan"
+              @hideMenu="hideMenu()"
+            >
               <template #item>Product Management</template>
             </HeaderItem>
-            <HeaderItem to="/project-management" name="proMan">
+            <HeaderItem
+              to="/project-management"
+              name="proMan"
+              @hideMenu="hideMenu()"
+            >
               <template #item>Project Management</template>
             </HeaderItem>
-            <HeaderItem to="/software-engineering" name="soft">
+            <HeaderItem
+              to="/software-engineering"
+              name="soft"
+              @hideMenu="hideMenu()"
+            >
               <template #item>Software Engineering</template>
             </HeaderItem>
-            <HeaderItem to="/user-experience" name="user">
+            <HeaderItem
+              to="/user-experience"
+              name="user"
+              @hideMenu="hideMenu()"
+            >
               <template #item>User Experience</template>
             </HeaderItem>
           </div>

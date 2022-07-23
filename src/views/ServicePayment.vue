@@ -2,22 +2,13 @@
 import { store, euro } from "../main";
 import { products } from "../json/products.json";
 import { useRoute } from "vue-router";
-// import { ref } from "vue";
 import currency from "currency.js";
-
-// const value = computed({
-//   get() {
-//     return this.modelValue;
-//   },
-//   set(value) {
-//     emit("update:modelValue", value);
-//   },
-// });
 const route = useRoute();
 const product = products.filter(
   (product) => product.slug === route.params.slug
 );
 </script>
+
 <script>
 export default {
   data() {
@@ -36,7 +27,6 @@ export default {
       store.addItem(name, price, quantity, image, course); //like this
     },
     setOption: function () {
-      console.log(this.selected.course);
       let value = this.selected.course;
       if (value.name === undefined) {
         this.visibility = true;

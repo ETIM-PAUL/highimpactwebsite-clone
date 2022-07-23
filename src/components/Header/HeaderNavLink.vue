@@ -5,13 +5,19 @@ import { link } from "../../main";
 export default {
   name: "HeaderNavLink",
   props: ["name"],
+  methods: {
+    hide() {
+      this.$emit("hideMenu");
+      link.setLink(this.name);
+    },
+  },
 };
 </script>
 
 <template>
   <RouterLink to="{{getLink}}">
     <span
-      @click="link.setLink(name)"
+      @click="hide"
       v-bind:class="link.link === name ? 'sub-active' : null"
       class="font-bold text-black block uppercase lg:hover:bg-sky-100 py-6 pl-8"
       ><slot name="navItem"></slot
