@@ -2,8 +2,17 @@
 import { store, euro } from "../main";
 import { products } from "../json/products.json";
 import { useRoute } from "vue-router";
+// import { ref } from "vue";
 import currency from "currency.js";
 
+// const value = computed({
+//   get() {
+//     return this.modelValue;
+//   },
+//   set(value) {
+//     emit("update:modelValue", value);
+//   },
+// });
 const route = useRoute();
 const product = products.filter(
   (product) => product.slug === route.params.slug
@@ -15,25 +24,26 @@ export default {
     return {
       initialQuantity: 1,
       visibility: true,
-      selected: {},
+      selected: {
+        course: {},
+      },
       subTotal: 0,
       errorMessage: false,
     };
   },
-  emits: ["update:selected"],
   methods: {
     addToCart: function (name, price, quantity, image, course) {
       store.addItem(name, price, quantity, image, course); //like this
     },
     setOption: function () {
-      console.log(this.selected);
-      let value = this.selected.amount;
-      if (this.selected.name === undefined) {
+      console.log(this.selected.course);
+      let value = this.selected.course;
+      if (value.name === undefined) {
         this.visibility = true;
       } else {
         this.visibility = false;
       }
-      this.subTotal = euro(value).format();
+      this.subTotal = euro(value.amount).format();
     },
     decreaseQua: function () {
       if (this.initialQuantity == 1) {
@@ -123,7 +133,7 @@ export default {
           <select
             class="sm:p-4 my-1 rounded-md lg:pr-24"
             @change="setOption()"
-            v-model="selected"
+            v-model="selected.course"
           >
             <optgroup>
               <option disabled value="">Please select one</option>
@@ -131,7 +141,7 @@ export default {
               <option
                 v-for="option in product[0].options"
                 v-bind:key="option.name"
-                :value="{ name: option.name, amount: option.amount }"
+                v-bind:value="{ name: option.name, amount: option.amount }"
               >
                 {{ option.name }}&nbsp;&#163;{{ option.amount }}
               </option>
@@ -157,7 +167,7 @@ export default {
           </tr>
           <tr>
             <td class="border p-4 text-sm bg-[#f7f7f7]">
-              Selected Option - {{ selected.name }}
+              Selected Option - {{ selected.course.name }}
             </td>
             <td class="border p-4 text-[#000] bg-[#f7f7f7] text-sm">
               {{ subTotal }}
@@ -200,7 +210,7 @@ export default {
                 subTotal,
                 initialQuantity,
                 product[0].imageUrl,
-                selected.name
+                selected.course.name
               )
             "
             class="w-[150px] rounded-lg border bg-[#2A2A5E] bg-[#2A2A5E] text-[#fff]"
