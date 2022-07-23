@@ -13,7 +13,7 @@
     </video>
 
     <div
-      class="toggle-menu absolute left-8 md:left-36 md:top-44 sm:top-20 top-24 sm:left-24 w-[600] my-auto flex container ..."
+      class="show-video-text absolute left-8 md:left-36 md:top-44 sm:top-20 top-24 sm:left-24 w-[600] my-auto flex container ..."
     >
       <section>
         <div>
